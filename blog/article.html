@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}}｜ブログ｜ヌンチャクコマンドー</title>
+  <meta name="description" content="{{summary}}" />
+  <link rel="canonical" id="canonical" href="" />
+  <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/"><span class="brand__logo"></span><span>ヌンチャクコマンドー</span></a>
+      <nav class="menu"><a href="/#products">プロダクト</a><a href="/#blog">ブログ</a><a href="/#shop">販売</a><a href="/#about">サークル</a></nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero__wrap">
+      <div class="breadcrumbs">
+        <a href="/">Home</a> ／ <a href="/#blog">ブログ</a> ／ <span id="bc-title">...</span>
+      </div>
+      <div class="prose" style="padding:8px 0 0">
+        <h1 id="title">読み込み中…</h1>
+        <div class="page-hero__meta">
+          <span id="date"></span>
+          <div id="cats" class="chips"></div>
+        </div>
+      </div>
+      <div class="page-hero__cover" id="cover-wrap"></div>
+    </div>
+  </section>
+
+  <main class="container" style="padding:24px 0 56px">
+    <div class="article-grid">
+      <aside class="sidebar">
+        <h4>目次</h4>
+        <nav><ul class="toc" id="toc"></ul></nav>
+        <div class="callout"><strong>代表：ぽん大根</strong><br><span class="muted">ご感想はX/Twitterまで</span></div>
+      </aside>
+      <article class="prose" id="content">読み込み中…</article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copy">© <span id="y"></span> Nunchaku Commando.</div>
+  </footer>
+
+  <script src="/assets/scripts/common.js"></script>
+  <script src="/assets/scripts/blog_article.js"></script>
+  <script>
+  // progress bar + TOC
+  (function(){
+    const prog = document.getElementById('progress');
+    const yspan = document.getElementById('y'); if(yspan) yspan.textContent = new Date().getFullYear();
+    const buildTOC = () => {
+      const content = document.getElementById('content');
+      const toc = document.getElementById('toc');
+      if(!content || !toc) return;
+      const heads = content.querySelectorAll('h2, h3');
+      toc.innerHTML = Array.from(heads).map(h=>{
+        if(!h.id) h.id = 'h-' + Math.random().toString(36).slice(2,8);
+        return `<li><a href="#${h.id}">${h.textContent}</a></li>`;
+      }).join('');
+    };
+    const onScroll = () => {
+      const el = document.documentElement;
+      const scrolled = (el.scrollTop) / (el.scrollHeight - el.clientHeight);
+      prog.style.transform = `scaleX(${Math.max(0, Math.min(1, scrolled))})`;
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('load', buildTOC);
+    const t = document.getElementById('title'); const bc = document.getElementById('bc-title');
+    new MutationObserver(()=>{ if(t && t.textContent && bc){ bc.textContent = t.textContent; } }).observe(t, {childList:true});
+  })();
+  </script>
+</body>
+</html>

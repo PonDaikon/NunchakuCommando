@@ -1,0 +1,38 @@
+{
+  "articles": [
+    {
+      "id": "review-001",
+      "title": "作品Aレビュー：初見導線の良さ",
+      "summary": "学習曲線／UI配置／想定プレイ時間の所感。",
+      "date": "2025-10-10",
+      "categories": [
+        "レビュー",
+        "試遊"
+      ],
+      "tags": [
+        "学習曲線",
+        "UI",
+        "プレイ時間"
+      ],
+      "cover": "/assets/blog/review-001.svg",
+      "url": "/blog/article.html?id=review-001"
+    },
+    {
+      "id": "tips-print-001",
+      "title": "印刷所メモ：色校正と用紙選びのコツ",
+      "summary": "サンプル帳の見方・面付け・刷り増し判断。",
+      "date": "2025-10-08",
+      "categories": [
+        "Tips",
+        "制作記"
+      ],
+      "tags": [
+        "色校",
+        "用紙",
+        "面付け"
+      ],
+      "cover": "/assets/blog/tips-print-001.svg",
+      "url": "/blog/article.html?id=tips-print-001"
+    }
+  ]
+}
