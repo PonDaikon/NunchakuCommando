@@ -10,10 +10,10 @@
       "age": "10歳〜",
       "status": "released",
       "order": 1,
-      "cover": "/assets/products/hissatsu-cover.svg",
+      "cover": "../assets/products/hissatsu-cover.svg",
       "shop": "https://booth.pm/ja/items/xxxxxx",
       "sold": false,
-      "url": "/products/product.html?id=hissatsuwaza"
+      "url": "products/product.html?id=hissatsuwaza"
     }
   ]
 }
