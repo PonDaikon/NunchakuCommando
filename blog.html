@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ | ヌンチャクコマンドー</title>
+    <meta name="description" content="ヌンチャクコマンドーのブログ記事一覧">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="assets/logo_WH.webp" alt="ヌンチャクコマンドー">
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        
+        <div class="nav-overlay" id="navOverlay">
+            <div class="nav-content">
+                <a href="index.html#home" class="nav-item">HOME</a>
+                <a href="index.html#about" class="nav-item">ABOUT US</a>
+                <a href="index.html#works" class="nav-item">WORKS & PRODUCTS</a>
+                <a href="blog.html" class="nav-item">BLOG</a>
+                <a href="index.html#sales" class="nav-item">販売情報</a>
+                <a href="index.html#team" class="nav-item">TEAM</a>
+                <a href="index.html#topics" class="nav-item">TOPICS</a>
+                <a href="index.html#contact" class="nav-item">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog List Section -->
+    <section class="section-blog" style="padding-top: 120px; min-height: 100vh;">
+        <div class="container">
+            <h1 class="section-title">BLOG</h1>
+            <p class="section-subtitle">すべての記事</p>
+            
+            <div class="blog-grid" id="blogListGrid">
+                <!-- JSONから動的に生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo_WH.webp" alt="ヌンチャクコマンドー">
+                </div>
+                <p class="footer-text">&copy; 2025 ヌンチャクコマンドー All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
+

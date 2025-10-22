@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "必殺技発動！",
+        "slug": "hissatsu-waza",
+        "category": "ボードゲーム",
+        "description": "企画〜クラファン〜製造",
+        "image": "assets/work_hissatsu_waza.webp",
+        "hoverImage": "assets/work_hissatsu_waza.webp",
+        "detailPage": "works/hissatsu-waza.html"
+    },
+    {
+        "id": 2,
+        "title": "マネコモ",
+        "slug": "manekomo",
+        "category": "金融サポート",
+        "description": "6ヶ月資産形成ロードマップ",
+        "image": "assets/manekomo_logo.webp",
+        "hoverImage": "assets/manekomo_logo.webp",
+        "detailPage": "works/manekomo.html"
+    },
+    {
+        "id": 3,
+        "title": "作品例3",
+        "slug": "work-example-3",
+        "category": "映像制作",
+        "description": "プロモーション動画制作",
+        "image": "https://via.placeholder.com/800x600/333333/ffffff?text=Work+3",
+        "hoverImage": "https://via.placeholder.com/800x600/666666/ffffff?text=Work+3+Hover",
+        "detailPage": "works/work-example-3.html"
+    }
+]
+

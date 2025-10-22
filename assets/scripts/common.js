@@ -1,1 +1,0 @@
-window.NC=window.NC||{};NC.util={toDateStr:(i)=>{try{const d=new Date(i);return`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}catch(e){return i}},badge:(t)=>`<span class="badge">${t}</span>`};

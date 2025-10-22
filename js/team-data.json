@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "ぽん太根",
+        "role": "PM兼なんでも屋",
+        "description": "Web、ボードゲーム、デザイン、写真、映像。制作全部やってみたい、そういう人です。",
+        "image": "assets/avatar_pontane.webp"
+    },
+    {
+        "id": 2,
+        "name": "チグルス",
+        "role": "アイディアマン",
+        "description": "多彩な知識でプロジェクトをより豊かに、奥深く。しゃべるのがうまい。",
+        "image": "assets/avatar_chigurus.webp"
+    },
+    {
+        "id": 3,
+        "name": "おちゃゆのみ",
+        "role": "カメラマン",
+        "description": "一人一人の人生に寄り添い、全てを鮮明に記録する最強カメラマン。老若男女問わず大人気です。",
+        "image": "assets/avatar_ochayunomi.webp"
+    },
+    {
+        "id": 4,
+        "name": "いのり",
+        "role": "サポーター",
+        "description": "にぎやかし。",
+        "image": "assets/avatar_inori.webp"
+    }
+]
+

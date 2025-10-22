@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "ブログ記事のタイトル例1",
+        "slug": "blog-post-1",
+        "date": "2025-10-20",
+        "category": "ボードゲーム",
+        "excerpt": "これはブログ記事の抜粋テキストです。記事の内容を簡潔に説明します。",
+        "image": "https://via.placeholder.com/800x600/333333/ffffff?text=Blog+1",
+        "content": "ここに記事の本文が入ります。"
+    },
+    {
+        "id": 2,
+        "title": "ブログ記事のタイトル例2",
+        "slug": "blog-post-2",
+        "date": "2025-10-18",
+        "category": "制作日記",
+        "excerpt": "2つ目のブログ記事の抜粋です。興味深い内容が書かれています。",
+        "image": "https://via.placeholder.com/800x600/333333/ffffff?text=Blog+2",
+        "content": "ここに記事の本文が入ります。"
+    },
+    {
+        "id": 3,
+        "title": "ブログ記事のタイトル例3",
+        "slug": "blog-post-3",
+        "date": "2025-10-15",
+        "category": "お知らせ",
+        "excerpt": "3つ目のブログ記事です。最新情報をお届けします。",
+        "image": "https://via.placeholder.com/800x600/333333/ffffff?text=Blog+3",
+        "content": "ここに記事の本文が入ります。"
+    }
+]
+
