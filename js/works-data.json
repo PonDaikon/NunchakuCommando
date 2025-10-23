@@ -7,7 +7,7 @@
         "description": "企画〜クラファン〜製造",
         "image": "assets/work_hissatsu_waza.webp",
         "hoverImage": "assets/work_hissatsu_waza.webp",
-        "detailPage": "works/hissatsu-waza.html"
+        "detailPage": "blog/hissatsu-waza-introduction.html"
     },
     {
         "id": 2,
@@ -17,17 +17,17 @@
         "description": "6ヶ月資産形成ロードマップ",
         "image": "assets/manekomo_logo.webp",
         "hoverImage": "assets/manekomo_logo.webp",
-        "detailPage": "works/manekomo.html"
+        "detailPage": "blog/manecomo-introduction.html"
     },
     {
         "id": 3,
-        "title": "作品例3",
-        "slug": "work-example-3",
-        "category": "映像制作",
-        "description": "プロモーション動画制作",
-        "image": "https://via.placeholder.com/800x600/333333/ffffff?text=Work+3",
-        "hoverImage": "https://via.placeholder.com/800x600/666666/ffffff?text=Work+3+Hover",
-        "detailPage": "works/work-example-3.html"
+        "title": "マネオタニートの金融オタロード",
+        "slug": "money-otaku-blog",
+        "category": "Web制作",
+        "description": "金融ブログサイトの企画・デザイン・実装",
+        "image": "assets/blog/money_otaku_blog_screenshot.webp",
+        "hoverImage": "assets/blog/money_otaku_blog_screenshot.webp",
+        "detailPage": "blog/web-production-case-study.html"
     }
 ]
 

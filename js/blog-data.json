@@ -1,5 +1,23 @@
 [
     {
+        "id": 4,
+        "title": "Web制作事例：マネオタニートの金融オタロード",
+        "slug": "web-production-case-study",
+        "date": "2025-10-23",
+        "category": "Web制作",
+        "excerpt": "金融ブログサイトの企画・デザイン・実装を一貫して担当。レスポンシブ対応、JSON管理システム、SEO最適化など、現代のWebサイトに求められる要素を網羅した制作事例をご紹介します。",
+        "image": "assets/blog/money_otaku_blog_screenshot.webp"
+    },
+    {
+        "id": 3,
+        "title": "マネコモ｜一生お金に困らない力を育てる6ヶ月資産形成ロードマップ",
+        "slug": "manecomo-introduction",
+        "date": "2025-10-23",
+        "category": "マネー",
+        "excerpt": "マネコモは「守る」「殖やす」「稼ぐ」の3軸で一生お金に困らない人を育てる6ヶ月資産形成ロードマップ。16万5,000円で学べる中立的なマネー教育サービス。",
+        "image": "assets/manekomo_logo.webp"
+    },
+    {
         "id": 2,
         "title": "クラファン108%達成!「必殺技発動!」商品紹介",
         "slug": "hissatsu-waza-introduction",

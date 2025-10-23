@@ -59,16 +59,21 @@ function displayRelatedArticles(articles, container) {
         return;
     }
     
-    container.innerHTML = articles.map(article => `
+    container.innerHTML = articles.map(article => {
+        // Fix image path for related articles (add ../ prefix)
+        const imagePath = article.image.startsWith('http') ? article.image : `../${article.image}`;
+        
+        return `
         <a href="${article.slug}.html" class="related-article-item">
             <div class="related-article-image">
-                <img src="${article.image}" alt="${article.title}">
+                <img src="${imagePath}" alt="${article.title}">
             </div>
             <span class="related-article-category">${article.category}</span>
             <h4 class="related-article-title">${article.title}</h4>
             <time class="related-article-date">${formatDate(article.date)}</time>
         </a>
-    `).join('');
+        `;
+    }).join('');
 }
 
 // Format date

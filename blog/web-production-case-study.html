@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web制作事例：マネオタニートの金融オタロード | ヌンチャクコマンドー</title>
+    <meta name="description" content="ヌンチャクコマンドーのWeb制作事例。金融ブログサイトの構成、デザイン、実装について詳しく紹介します。">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-logo">
+            <a href="../index.html#home">
+                <img src="../assets/logo_WH.webp" alt="ヌンチャクコマンドー">
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        
+        <div class="nav-overlay" id="navOverlay">
+            <div class="nav-content">
+                <a href="../index.html#home" class="nav-item">HOME</a>
+                <a href="../index.html#about" class="nav-item">ABOUT US</a>
+                <a href="../index.html#works" class="nav-item">WORKS & PRODUCTS</a>
+                <a href="../blog.html" class="nav-item">BLOG</a>
+                <a href="../index.html#sales" class="nav-item">販売情報</a>
+                <a href="../index.html#team" class="nav-item">TEAM</a>
+                <a href="../index.html#topics" class="nav-item">TOPICS</a>
+                <a href="../index.html#contact" class="nav-item">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Wrapper -->
+    <div class="article-wrapper">
+        <article class="article-main">
+        <header class="article-header">
+            <div class="article-meta">
+                <time class="article-date">2025.10.23</time>
+                <span class="article-category">Web制作</span>
+            </div>
+            <h1 class="article-title">Web制作事例：マネオタニートの金融オタロード</h1>
+            <div class="article-featured-image">
+                <img src="../assets/blog/money_otaku_blog_screenshot.webp" alt="マネオタニートの金融オタロード トップページ">
+            </div>
+        </header>
+
+        <!-- Article Content -->
+        <div class="article-content">
+
+            <h2>プロジェクト概要</h2>
+
+            <p>「マネオタニートの金融オタロード」は、節約・投資・副業の3つの柱で資産形成を目指す金融実践ブログです。ヌンチャクコマンドーでは、このブログサイトの企画・デザイン・実装を一貫して担当しました。</p>
+
+            <p><strong>🔗 公開サイト:</strong> <a href="https://pondaikon.github.io/money-otaku-neet-blog/" target="_blank" rel="noopener">https://pondaikon.github.io/money-otaku-neet-blog/</a><br>
+            <strong>💻 GitHubリポジトリ:</strong> <a href="https://github.com/PonDaikon/money-otaku-neet-blog" target="_blank" rel="noopener">https://github.com/PonDaikon/money-otaku-neet-blog</a></p>
+
+            <h2>サイトの特徴</h2>
+
+            <h3>1. 3つの柱で構成されたコンテンツカテゴリ</h3>
+
+            <p>ブログのコンセプトに合わせて、コンテンツを3つのカテゴリに整理しました。</p>
+
+            <ul>
+                <li><strong>守る</strong>: ポイ活・節約・固定費削減で支出を最適化</li>
+                <li><strong>殖やす</strong>: インデックス投資・新NISAで資産を増やす</li>
+                <li><strong>稼ぐ</strong>: 副業・SNS運用で収入源を多様化</li>
+            </ul>
+
+            <p>各カテゴリは視覚的に区別しやすいアイコンと色分けで表現し、ユーザーが目的の情報にすぐにアクセスできるようにしました。</p>
+
+            <h3>2. レスポンシブデザイン</h3>
+
+            <p>デスクトップ、タブレット、スマートフォンのすべてのデバイスで快適に閲覧できるレスポンシブデザインを採用。CSS GridとFlexboxを活用し、画面サイズに応じて最適なレイアウトを実現しました。</p>
+
+            <img src="../assets/blog/money_otaku_blog_articles.webp" alt="記事一覧ページ" style="width: 100%; margin: 2rem 0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+            <h3>3. JSON管理による動的記事システム</h3>
+
+            <p>記事データを`articles.json`で一元管理することで、新しい記事の追加や更新が簡単に行えるシステムを構築しました。</p>
+
+            <pre style="background-color: var(--color-gray-50); padding: 1.5rem; border-radius: 8px; overflow-x: auto;"><code>{
+  "id": "article-id",
+  "title": "記事タイトル",
+  "description": "記事の説明",
+  "date": "YYYY-MM-DD",
+  "category": "mamoru|huyasu|kasegu",
+  "categoryName": "守る|殖やす|稼ぐ",
+  "filename": "記事ファイル名.html",
+  "readTime": "読了時間"
+}</code></pre>
+
+            <p>JavaScriptで記事データを読み込み、トップページやカテゴリページに自動的に表示する仕組みを実装しました。</p>
+
+            <h3>4. 関連記事の自動表示</h3>
+
+            <p>各記事ページでは、同じカテゴリの関連記事が自動的に表示されます。これにより、読者が興味のある情報を続けて読みやすくなり、サイト内の回遊性が向上しました。</p>
+
+            <h3>5. SEO最適化</h3>
+
+            <p>検索エンジンに適切に認識されるよう、セマンティックHTMLを使用し、メタタグやOGPタグを適切に設定しました。また、読了時間の表示や記事の日付表示など、ユーザーエクスペリエンスを向上させる要素も実装しています。</p>
+
+            <h2>使用技術</h2>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+                <thead>
+                    <tr style="background-color: var(--color-gray-100);">
+                        <th style="padding: 1rem; border: 1px solid var(--color-gray-300); text-align: left;">技術</th>
+                        <th style="padding: 1rem; border: 1px solid var(--color-gray-300); text-align: left;">用途</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);"><strong>HTML5</strong></td>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);">セマンティックなマークアップ</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);"><strong>CSS3</strong></td>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);">Grid・Flexboxを活用したレスポンシブデザイン</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);"><strong>JavaScript</strong></td>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);">Vanilla JSによる動的コンテンツ管理</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);"><strong>Font Awesome</strong></td>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);">アイコンライブラリ</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);"><strong>Google Fonts</strong></td>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);">Webフォント</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);"><strong>GitHub Pages</strong></td>
+                        <td style="padding: 1rem; border: 1px solid var(--color-gray-300);">ホスティング</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>デザインのポイント</h2>
+
+            <h3>カラースキーム</h3>
+
+            <p>金融ブログという性質上、信頼感と安心感を与えるカラースキームを採用しました。紫をメインカラーに、カテゴリごとに異なるアクセントカラー(オレンジ、ブルー、イエロー)を使用し、視覚的な区別をつけています。</p>
+
+            <h3>タイポグラフィ</h3>
+
+            <p>可読性を重視し、本文には適切な行間とフォントサイズを設定。見出しは階層構造を明確にし、情報の優先順位が一目で分かるようにしました。</p>
+
+            <h3>レイアウト</h3>
+
+            <p>カード型のレイアウトを採用し、各記事が独立した情報として認識しやすいデザインにしました。ホバー時のアニメーションやシャドウ効果で、インタラクティブな体験を提供しています。</p>
+
+            <h2>プロジェクトの成果</h2>
+
+            <ul>
+                <li>✅ レスポンシブ対応により、すべてのデバイスで快適な閲覧体験を実現</li>
+                <li>✅ JSON管理システムにより、記事の追加・更新が容易に</li>
+                <li>✅ 関連記事機能でサイト内回遊性が向上</li>
+                <li>✅ GitHub Pagesで無料ホスティング、運用コストゼロ</li>
+                <li>✅ SEO最適化により、検索エンジンからの流入を促進</li>
+            </ul>
+
+            <h2>ヌンチャクコマンドーのWeb制作サービス</h2>
+
+            <p>ヌンチャクコマンドーでは、このような<strong>Webサイトの企画・デザイン・実装を一貫して承ります</strong>。</p>
+
+            <h3>対応可能な制作内容</h3>
+
+            <ul>
+                <li><strong>コーポレートサイト</strong> - 企業やサークルの公式サイト</li>
+                <li><strong>ブログサイト</strong> - 個人ブログや情報発信サイト</li>
+                <li><strong>ポートフォリオサイト</strong> - クリエイターや制作者の作品紹介サイト</li>
+                <li><strong>ECサイト</strong> - オンラインショップやBOOTH連携サイト</li>
+                <li><strong>ランディングページ</strong> - 商品・サービスの紹介ページ</li>
+            </ul>
+
+            <h3>制作の流れ</h3>
+
+            <ol>
+                <li><strong>ヒアリング</strong> - お客様のご要望や目的をお伺いします</li>
+                <li><strong>企画・提案</strong> - サイトの構成やデザインの方向性をご提案</li>
+                <li><strong>デザイン制作</strong> - モックアップを作成し、デザインを確定</li>
+                <li><strong>実装</strong> - HTML/CSS/JavaScriptでコーディング</li>
+                <li><strong>テスト・納品</strong> - 動作確認後、納品・公開サポート</li>
+            </ol>
+
+            <h3>料金について</h3>
+
+            <p>プロジェクトの規模や内容により異なりますので、まずはお気軽にお問い合わせください。お見積もりは無料です。</p>
+
+            <p style="margin-top: 2rem; padding: 1.5rem; background-color: var(--color-gray-50); border-left: 4px solid var(--color-accent);">
+                <strong>📝 Web制作のご相談・お問い合わせ</strong><br>
+                Webサイトの制作をご検討の方は、以下のお問い合わせフォームよりご連絡ください。企画段階からのご相談も大歓迎です。
+            </p>
+
+            <p style="text-align: center; margin: 2rem 0;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScThoeQUnzuR9xTudSJF424t-OvWLq1HFkv8IJWnQvqvHyUFQ/viewform?usp=dialog" class="btn" style="background-color: var(--color-accent); color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 4px; display: inline-block;" target="_blank" rel="noopener">お問い合わせフォームはこちら</a>
+            </p>
+
+            <h2>まとめ</h2>
+
+            <p>「マネオタニートの金融オタロード」は、ユーザーにとって使いやすく、管理者にとって更新しやすいサイトを目指して制作しました。レスポンシブデザイン、動的コンテンツ管理、SEO最適化など、現代のWebサイトに求められる要素を網羅しています。</p>
+
+            <blockquote>
+                <p>「構成からデザイン、実装まで。あなたのアイデアを形にします。」</p>
+            </blockquote>
+
+            <p style="text-align: right; margin-top: 3rem; color: var(--color-gray-600);">
+                ヌンチャクコマンドー / ぽん大根
+            </p>
+        </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-section">
+                <h3>関連記事</h3>
+                <div id="relatedArticles" class="related-articles">
+                    <!-- JavaScriptで動的に生成 -->
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Article Footer -->
+    <div class="article-wrapper">
+        <article class="article-main">
+            <footer class="article-footer">
+                <div class="article-share">
+                    <p>この記事をシェア</p>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?url=https://pondaikon.github.io/NunchakuCommando/blog/web-production-case-study.html&text=Web制作事例：マネオタニートの金融オタロード" class="share-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://pondaikon.github.io/NunchakuCommando/blog/web-production-case-study.html" class="share-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="../blog.html" class="btn btn-outline">記事一覧に戻る</a>
+            </footer>
+
+            <!-- Utterances Comments -->
+            <div class="article-comments">
+                <h2>コメント</h2>
+                <script src="https://utteranc.es/client.js"
+                        repo="PonDaikon/NunchakuCommando"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ヌンチャクコマンドー</h3>
+                    <p>おもしろいをつくる</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>サイトマップ</h3>
+                    <ul>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#works">Works</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../index.html#sales">販売情報</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>リンク</h3>
+                    <ul>
+                        <li><a href="../index.html#team">Team</a></li>
+                        <li><a href="../index.html#topics">Topics</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <ul>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScThoeQUnzuR9xTudSJF424t-OvWLq1HFkv8IJWnQvqvHyUFQ/viewform?usp=dialog" target="_blank">お問い合わせフォーム</a></li>
+                        <li><a href="https://x.com/nunchaku_c" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ヌンチャクコマンドー. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/related-articles.js"></script>
+</body>
+</html>
+
