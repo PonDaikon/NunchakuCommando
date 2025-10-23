@@ -1,5 +1,14 @@
 [
     {
+        "id": 2,
+        "title": "クラファン108%達成!「必殺技発動!」商品紹介",
+        "slug": "hissatsu-waza-introduction",
+        "date": "2025-10-22",
+        "category": "ボードゲーム",
+        "excerpt": "クラウドファンディングで108%達成!ポーカー×麻雀の新感覚盤面構築ゲーム「必殺技発動!」の商品紹介。BOOTHで販売予定ですが、クラファン支援分とゲムマ予約分で完売の可能性も。",
+        "image": "assets/work_hissatsu_waza.webp"
+    },
+    {
         "id": 1,
         "title": "ヌンチャクコマンドーのブログを開設しました!",
         "slug": "blog-opening",
